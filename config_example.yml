@@ -1,0 +1,16 @@
+bot:
+  # Токен бота, можно получить у @BotFather
+  token: "your_token_here"
+  admin_ids: [1]
+
+nats:
+  servers: ['nats://localhost:4222']
+
+webhook:
+  web_server_host: "0.0.0.0"
+  web_server_port: "5000"
+  webhook_path: "/awh"
+  webhook_secret: "secret"
+  base_webhook_url: "https://127.0.0.1:8443"
+  webhook_ssl_cert: "cert/127.0.0.1.self.crt"
+  webhook_ssl_priv: "cert/127.0.0.1.self.key"

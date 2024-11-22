@@ -1,0 +1,5 @@
+/cert/*
+config.yml
+.venv
+.idea
+**.pyc

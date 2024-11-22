@@ -1,0 +1,12 @@
+[2024-11-22 23:19:48,743] #INFO     main.py:88 - __main__ - Starting the main event loop.
+[2024-11-22 23:19:48,744] #INFO     main.py:50 - __main__ - Starting up
+[2024-11-22 23:19:48,745] #INFO     main.py:53 - __main__ - Connecting routers
+[2024-11-22 23:19:48,745] #INFO     main.py:57 - __main__ - Setting up middlewares
+[2024-11-22 23:19:48,745] #INFO     main.py:58 - __main__ - Initializing bot
+[2024-11-22 23:19:48,929] #INFO     main.py:68 - __main__ - Starting app
+[2024-11-22 23:19:49,601] #INFO     main.py:73 - __main__ - Ready to use
+
+       Started on  http://0.0.0.0:5000!
+[2024-11-22 23:19:54,546] #INFO     web_log.py:211 - aiohttp.access - 127.0.0.1 [22/Nov/2024:23:19:54 +0900] "POST /awh HTTP/1.0" 200 161 "-" "-"
+[2024-11-22 23:19:54,547] #INFO     dispatcher.py:172 - aiogram.event - Update id=710854718 is handled. Duration 0 ms by bot id=803173072
+[2024-11-22 23:20:04,523] #INFO     main.py:80 - __main__ - Shutdown bot session..
