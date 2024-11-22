@@ -17,40 +17,10 @@ ConfigType = TypeVar("ConfigType", bound=BaseModel)
 ROOT_DIR = path.dirname(path.abspath(__file__))
 conf_file = path.join(ROOT_DIR, "config.yml")
 
-@dataclass
-class NatsConfig(BaseModel):
-    servers: list[str]
 
 @dataclass
 class BotConfig(BaseModel):
     token: SecretStr
-    admin_ids: list[int]
-
-@dataclass
-class DbConfig(BaseModel):
-    dsn: str
-    is_echo: bool
-
-@dataclass
-class WebHookConfig(BaseModel):
-    web_server_host: str
-    web_server_port: int
-    webhook_path: str
-    webhook_secret: str
-    base_webhook_url: str
-    webhook_ssl_cert: FilePath
-    webhook_ssl_priv: FilePath
-
-    @field_validator("webhook_ssl_cert", mode="before")
-    @classmethod
-    def abs_cert(cls, webhook_ssl_cert):
-        return path.join(ROOT_DIR, webhook_ssl_cert)
-
-
-    @field_validator("webhook_ssl_priv", mode="before")
-    @classmethod
-    def abs_priv(cls, webhook_ssl_priv):
-        return path.join(ROOT_DIR, webhook_ssl_priv)
 
 
 @lru_cache(maxsize=1)
